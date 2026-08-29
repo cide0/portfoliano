@@ -1,0 +1,7 @@
+:root{
+    --bg: #ffffff;
+    --header-font: #000000;
+    --font: #abacaf;
+    --highlight: rgb(216 213 218 / 0.5);
+    --highlight-hover: rgb(216 213 218 / 1);
+}
