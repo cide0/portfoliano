@@ -388,6 +388,7 @@ body {
 
     .item-date {
         font-size: 1.2rem;
+        white-space: nowrap;
     }
 
     .item-references {
