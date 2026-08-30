@@ -302,12 +302,137 @@ body {
     border: none;
     outline: none;
     box-shadow: none;
-    border-radius:12px;
+    border-radius: 12px;
     margin-bottom: 1rem;
 }
 
 .spotify{
     width: 390px;
     height: 250px;
-    border-radius:12px
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        margin-top: 2rem;
+    }
+
+    .header {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .delimiter {
+        width: 70%;
+    }
+
+    .about-container {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .history-container {
+        margin-top: 2rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem 2rem;
+        padding: 0 1rem;
+        font-size: 2.2rem;
+    }
+
+    #tutorial-navbar-button {
+        order: 1;
+    }
+
+    #sight-reading-navbar-button {
+        order: 2;
+    }
+
+    .search-filter-container {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    input {
+        width: 15rem;
+        font-size: 1.8rem;
+    }
+
+    #search-input {
+        margin-left: 0;
+    }
+
+    .page-container {
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.9rem 1rem 0.6rem 1rem;
+    }
+
+    .item-header {
+        font-size: 1.6rem;
+        gap: 1rem;
+    }
+
+    .item-date {
+        font-size: 1.2rem;
+    }
+
+    .item-references {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .video {
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .spotify {
+        width: 100%;
+        max-width: 390px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 2.4rem;
+    }
+
+    .about-container {
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        font-size: 1.9rem;
+    }
+
+    .item-header {
+        font-size: 1.4rem;
+    }
+
+    .item-date {
+        font-size: 1.1rem;
+    }
+
+    input {
+        width: 12rem;
+        font-size: 1.6rem;
+    }
 }
