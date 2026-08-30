@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="code/public/assets/icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="code/public/assets/styles/styles.css">
-    <script type="module" src="code/public/js/app.js" defer></script>
+    <script type="module" src="code/public/js/switch-page.js" defer></script>
+    <script type="module" src="code/public/js/search.js" defer></script>
+    <script type="module" src="code/public/js/filter.js" defer></script>
 </head>
 <body>
 <div class="header-container">
@@ -21,71 +23,111 @@
 </div>
 <div class="history-container">
     <div class="navbar">
-        <div class="header-item">
+        <div id="tutorial-navbar-button" class="header-item active">
             via Tutorial
         </div>
-        <div class="header-item">
+        <div class="search-filter-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <div class="date-filter" id="date-filter" title="Sort by date">
+                <img src="code/public/assets/icons/date-filter.svg" alt="Filter Icon" class="filter-icon" id="date-filter-icon">
+            </div>
+        </div>
+        <div id="sight-reading-navbar-button" class="header-item">
             via Sight Reading
         </div>
     </div>
-    <div class="page-container">
-        <div class="item-row">
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Changes - XXXTentacion</div>
-                    <div class="item-date">29.08.2026</div>
-                </div>
-                <div class="item-references">
-                    <div class="item-video">
-                        <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY "></iframe>
-                    </div>
-                    <div class="item-spotify">
-                        <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
+    <div id="tutorial-content" class="page-container">
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title tutorial-item-title">hello - XXXTentacion</div>
+                <div class="item-date tutorial-item-date">2026-08-31</div>
             </div>
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Changes - XXXTentacion</div>
-                    <div class="item-date">29.08.2026</div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
                 </div>
-                <div class="item-references">
-                    <div class="item-video">
-                        <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY "></iframe>
-                    </div>
-                    <div class="item-spotify">
-                        <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+                <div class="item-spotify">
+                    <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-        <div class="item-row">
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Changes - XXXTentacion</div>
-                    <div class="item-date">29.08.2026</div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title tutorial-item-title">Changes - XXXTentacion</div>
+                <div class="item-date tutorial-item-date">2025-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
                 </div>
-                <div class="item-references">
-                    <div class="item-video">
-                        <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY "></iframe>
-                    </div>
-                    <div class="item-spotify">
-                        <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+                <div class="item-spotify">
+                    <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Changes - XXXTentacion</div>
-                    <div class="item-date">29.08.2026</div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title tutorial-item-title">Changes - XXXTentacion</div>
+                <div class="item-date tutorial-item-date">2024-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
                 </div>
-                <div class="item-references">
-                    <div class="item-video">
-                        <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY "></iframe>
-                    </div>
-                    <div class="item-spotify">
-                        <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+                <div class="item-spotify">
+                    <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title tutorial-item-title">test - XXXTentacion</div>
+                <div class="item-date tutorial-item-date">2023-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                </div>
+                <div class="item-spotify">
+                    <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sight-reading-content" class="page-container hidden">
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title sight-reading-item-title">Test</div>
+                <div class="item-date sight-reading-item-date">2026-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                </div>
+                <div class="item-spotify">
+                    <iframe class="spotify" data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7AFASza1mXqntmGtbxXprO?utm_source=generator&si=16979bdd9f574b21" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title sight-reading-item-title">Test</div>
+                <div class="item-date sight-reading-item-date">2025-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title sight-reading-item-title">Test</div>
+                <div class="item-date sight-reading-item-date">2024-08-29</div>
+            </div>
+            <div class="item-references">
+                <div class="item-video">
+                    <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
