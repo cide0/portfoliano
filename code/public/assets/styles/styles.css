@@ -10,11 +10,6 @@
     src: url('../font/Tangerine-Bold.ttf');
 }
 
-@font-face {
-    font-family: "Alata";
-    src: url('../font/Alata-Regular.ttf');
-}
-
 html {
     overflow-anchor: none;
 }
@@ -324,13 +319,17 @@ body {
     }
 
     .delimiter {
-        width: 70%;
+        width: 55%;
     }
 
     .about-container {
         font-size: 1.6rem;
         padding: 0 1rem;
         text-align: center;
+    }
+
+    .about-text{
+        color: var(--header-font);
     }
 
     .history-container {
@@ -418,6 +417,10 @@ body {
 
     .about-container {
         font-size: 1.4rem;
+    }
+
+    .about-text{
+        color: var(--header-font);
     }
 
     .navbar {
