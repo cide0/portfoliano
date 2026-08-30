@@ -329,7 +329,17 @@ body {
     }
 
     .about-text{
-        color: var(--header-font);
+        background: linear-gradient(
+                to right,
+                var(--font-hover) 0%,
+                var(--font-hover) 50%,
+                var(--header-font) 50%,
+                var(--header-font) 100%
+        );
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .history-container {
@@ -420,7 +430,17 @@ body {
     }
 
     .about-text{
-        color: var(--header-font);
+        background: linear-gradient(
+                to right,
+                var(--font-hover) 0%,
+                var(--font-hover) 50%,
+                var(--header-font) 50%,
+                var(--header-font) 100%
+        );
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     .navbar {
