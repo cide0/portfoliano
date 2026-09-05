@@ -18,6 +18,25 @@ tutorialNavbarButton.addEventListener('click', () => {
     window.scrollTo({top: 0});
 
     searchInput.value = '';
+
+    let tutorialItemsContainer = document.getElementById('tutorial-content');
+    let tutorialItems = tutorialItemsContainer.querySelectorAll('.item');
+
+    let sightReadingItemsContainer = document.getElementById('sight-reading-content');
+    let sightReadingItems = sightReadingItemsContainer.querySelectorAll('.item');
+
+    if(dateFilterIcon.classList.contains('rotate')) {
+        tutorialItemsContainer.innerHTML = '';
+        tutorialItems.forEach(item => {
+            tutorialItemsContainer.prepend(item);
+        });
+
+        sightReadingItemsContainer.innerHTML = '';
+        sightReadingItems.forEach(item => {
+            sightReadingItemsContainer.prepend(item);
+        });
+    }
+
     dateFilterIcon.classList.remove('rotate');
 });
 
@@ -31,5 +50,24 @@ sightReadingNavbarButton.addEventListener('click', () => {
     window.scrollTo({top: 0});
 
     searchInput.value = '';
+
+    let tutorialItemsContainer = document.getElementById('tutorial-content');
+    let tutorialItems = tutorialItemsContainer.querySelectorAll('.item');
+
+    let sightReadingItemsContainer = document.getElementById('sight-reading-content');
+    let sightReadingItems = sightReadingItemsContainer.querySelectorAll('.item');
+
+    if(dateFilterIcon.classList.contains('rotate')) {
+        tutorialItemsContainer.innerHTML = '';
+        tutorialItems.forEach(item => {
+            tutorialItemsContainer.prepend(item);
+        });
+
+        sightReadingItemsContainer.innerHTML = '';
+        sightReadingItems.forEach(item => {
+            sightReadingItemsContainer.prepend(item);
+        });
+    }
+
     dateFilterIcon.classList.remove('rotate');
 });
